@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import url(C:\Users\Alunos\Documents\GitHub\EngenhariaSoftwareII\248669\site\css\style); 
-@import url(C:\Users\Alunos\Documents\GitHub\EngenhariaSoftwareII\248669\site\css\camera); 
-@import url(C:\Users\Alunos\Documents\GitHub\EngenhariaSoftwareII\248669\site\css\contacts); 
-@import url(C:\Users\Alunos\Documents\GitHub\EngenhariaSoftwareII\248669\site\css\reset); 
-@import url(C:\Users\Alunos\Documents\GitHub\EngenhariaSoftwareII\248669\site\css\skeleton); 
-@import url(C:\Users\Alunos\Documents\GitHub\EngenhariaSoftwareII\248669\site\css\slider); 
-@import url(C:\Users\Alunos\Documents\GitHub\EngenhariaSoftwareII\248669\site\css\superfish); 
-@import url(C:\Users\Alunos\Documents\GitHub\EngenhariaSoftwareII\248669\site\css\touchTouch); 
+@import url(assets/css/style.css); 
+@import url(assets/css/camera.css); 
+@import url(assets/css/accordion.css); 
+@import url(assets/css/reset.css); 
+@import url(assets/css/skeleton.css); 
+@import url(assets/css/slider.css); 
+@import url(assets/css/superfish.css); 
+@import url(assets/css/touchTouch.css); 
