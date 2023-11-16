@@ -7,10 +7,14 @@ import { PlanosComponent } from './Site/planos/planos.component';
 import { RedesEstacoesComponent } from './Site/redes-estacoes/redes-estacoes.component';
 import { CadastroComponent } from './Cliente/cadastro/cadastro.component';
 import { LoginComponent } from './Cliente/login/login.component';
+import { AdmHomeComponent } from './Cliente/adm-home/adm-home.component';
+import { ListaClienteComponent } from './Cliente/lista-cliente/lista-cliente.component';
 
 const routes: Routes = [
   {path: 'cadastro', component:CadastroComponent},
   {path: 'login', component:LoginComponent},
+  {path: 'admHome', component:AdmHomeComponent},
+  {path: 'listaCliente', component:ListaClienteComponent},
   {path: 'contatos', component:ContatosComponent},
   {path: 'inicio', component:InicioComponent},
   {path: 'noticias', component:NoticiasComponent},

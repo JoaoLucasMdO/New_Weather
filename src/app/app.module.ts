@@ -10,6 +10,8 @@ import { NoticiasComponent } from './Site/noticias/noticias.component';
 import { PlanosComponent } from './Site/planos/planos.component';
 import { ContatosComponent } from './Site/contatos/contatos.component';
 import { RedesEstacoesComponent } from './Site/redes-estacoes/redes-estacoes.component';
+import { AdmHomeComponent } from './Cliente/adm-home/adm-home.component';
+import { ListaClienteComponent } from './Cliente/lista-cliente/lista-cliente.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RedesEstacoesComponent } from './Site/redes-estacoes/redes-estacoes.com
     NoticiasComponent,
     PlanosComponent,
     ContatosComponent,
-    RedesEstacoesComponent
+    RedesEstacoesComponent,
+    AdmHomeComponent,
+    ListaClienteComponent
   ],
   imports: [
     BrowserModule,

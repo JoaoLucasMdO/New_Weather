@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<div class="container">
+    <div class="admin-header">
+      <h1>Página do Administrador</h1>
+      <button routerLink="/inicio" class="btn btn-danger">Sair</button>
+    </div>
+    <nav class="admin-nav">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admHome">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/listaCliente">Clientes</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h1>Clientes</h1>
+                    <button class="btn btn-primary">+ Novo Cliente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container mt-4">
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Endereço</th>
+      <th>Limite de Crédito</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Aqui você pode preencher os dados dos clientes -->
+  </tbody>
+</table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

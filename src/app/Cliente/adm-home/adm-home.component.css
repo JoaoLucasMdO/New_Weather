@@ -1,0 +1,24 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .admin-header h1 {
+    margin: 0;
+  }
+  
+  .admin-nav {
+    margin-top: 30px;
+  }
+  
+  .message {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .image-container {
+    margin-top: 30px;
+    text-align: center;
+  }
