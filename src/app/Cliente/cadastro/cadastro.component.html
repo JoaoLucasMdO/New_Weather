@@ -1,18 +1,45 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <div class="container">
-    <h2>Cadastro de Clientes</h2>
-    <form>
+    <h2>{{title}}</h2>
+    <form (ngSubmit) = "onSubmit()">
       <div class="form-group">
-        <label for="nome">Nome:</label>
-        <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+        <label for="nome">Nome</label>
+        <input type="text" 
+        class="form-control" 
+        id="nome" 
+        placeholder="Digite o nome"
+        [(ngModel)] = "cliente.nome">
       </div>
       <div class="form-group">
-        <label for="endereco">Endereço:</label>
-        <input type="text" class="form-control" id="endereco" placeholder="Digite o endereço">
+        <label for="senha">Senha</label>
+        <input type="text" 
+        class="form-control" 
+        id="senha" 
+        placeholder="Digite a senha"
+        [(ngModel)] = "cliente.senha">
       </div>
       <div class="form-group">
-        <label for="limite-credito">Limite de Crédito:</label>
-        <input type="number" class="form-control" id="limite-credito" placeholder="Digite o limite de crédito">
+        <label for="confSenha">Confirmar Senha</label>
+        <input type="text" 
+        class="form-control" 
+        id="confSenha" 
+        placeholder="Confirme a senha">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="text" 
+        class="form-control" 
+        id="email" 
+        placeholder="Digite o e-mail"
+        [(ngModel)] = "cliente.email">
+      </div>
+      <div class="form-group">
+        <label for="tel">Telefone</label>
+        <input type="tel" 
+        class="form-control" 
+        id="tel"
+        placeholder="Digite o telefone"
+        [(ngModel)] = "cliente.telefone">
       </div>
     <button type="submit" class="btn btn-primary">Cadastrar</button>
   </form>

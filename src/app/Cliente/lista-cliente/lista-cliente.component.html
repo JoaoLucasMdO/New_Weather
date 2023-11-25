@@ -4,23 +4,16 @@
       <h1>Página do Administrador</h1>
       <button routerLink="/inicio" class="btn btn-danger">Sair</button>
     </div>
-    <nav class="admin-nav">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
+        <button class="btn btn-outline-primary">
           <a class="nav-link" routerLink="/admHome">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" routerLink="/listaCliente">Clientes</a>
-        </li>
-      </ul>
-    </nav>
+        </button>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="title">
                     <h1>Clientes</h1>
-                    <button class="btn btn-primary">+ Novo Cliente</button>
+                    <button class="btn btn-primary" routerLink="/cadastro">+ Novo Cliente</button>
                 </div>
             </div>
         </div>
@@ -30,15 +23,30 @@
 <table class="table">
   <thead>
     <tr>
-      <th>ID</th>
-      <th>Nome</th>
-      <th>Endereço</th>
-      <th>Limite de Crédito</th>
-      <th></th>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Endereço</th>
+      <th scope="col">Limite de Crédito</th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
-    <!-- Aqui você pode preencher os dados dos clientes -->
+    <tr *ngFor="let cliente of clientes">
+      <td>{{cliente.id}}</td>
+      <td>{{cliente.nome}}</td>
+      <td>{{cliente.senha}}</td>
+      <td>{{cliente.telefone}}</td>
+      <td>
+          <a class="btn btn-primary" title="editar" routerLink="/clientes/editar/{{cliente.id}}">
+              <i class="fa-regular fa-pen-to-square fa-bounce" style="color: #ffffff;"></i>
+          </a>
+      </td>
+      <td>
+          <a (click)="delete(cliente)" class="btn btn-danger" title="excluir" href="">
+              <i class="fa-solid fa-trash fa-bounce" style="color: #ffffff;"></i>
+          </a>
+      </td>
+  </tr>
   </tbody>
 </table>
 </div>

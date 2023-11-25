@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { ContatosComponent } from './Site/contatos/contatos.component';
 import { RedesEstacoesComponent } from './Site/redes-estacoes/redes-estacoes.component';
 import { AdmHomeComponent } from './Cliente/adm-home/adm-home.component';
 import { ListaClienteComponent } from './Cliente/lista-cliente/lista-cliente.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ListaClienteComponent } from './Cliente/lista-cliente/lista-cliente.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
