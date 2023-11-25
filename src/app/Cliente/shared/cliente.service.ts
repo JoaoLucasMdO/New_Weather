@@ -7,7 +7,7 @@ import { Cliente } from './cliente';
 })
 export class ClienteService {
 
-  private URL = 'http://localhost:9090/cliente'
+  private URL = 'http://localhost:9090/usuario'
 
   constructor(private http: HttpClient) { }
 

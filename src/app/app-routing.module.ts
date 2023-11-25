@@ -11,7 +11,8 @@ import { AdmHomeComponent } from './Cliente/adm-home/adm-home.component';
 import { ListaClienteComponent } from './Cliente/lista-cliente/lista-cliente.component';
 
 const routes: Routes = [
-  {path: 'cadastro', component:CadastroComponent},
+  {path: 'cadastro/novo', component:CadastroComponent},
+  {path: 'cadastro/editar/:id', component:CadastroComponent},
   {path: 'login', component:LoginComponent},
   {path: 'admHome', component:AdmHomeComponent},
   {path: 'listaCliente', component:ListaClienteComponent},

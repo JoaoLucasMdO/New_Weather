@@ -7,6 +7,8 @@
         <input type="text" 
         class="form-control" 
         id="nome" 
+        name="nome"
+        #nome="ngModel"
         placeholder="Digite o nome"
         [(ngModel)] = "cliente.nome">
       </div>
@@ -15,6 +17,8 @@
         <input type="text" 
         class="form-control" 
         id="senha" 
+        name="senha"
+        #nome="ngModel"
         placeholder="Digite a senha"
         [(ngModel)] = "cliente.senha">
       </div>
@@ -29,6 +33,8 @@
         <label for="email">E-mail</label>
         <input type="text" 
         class="form-control" 
+        name="email"
+        #nome="ngModel"
         id="email" 
         placeholder="Digite o e-mail"
         [(ngModel)] = "cliente.email">
@@ -37,11 +43,14 @@
         <label for="tel">Telefone</label>
         <input type="tel" 
         class="form-control" 
+        name="tel"
+        #nome="ngModel"
         id="tel"
         placeholder="Digite o telefone"
         [(ngModel)] = "cliente.telefone">
       </div>
     <button type="submit" class="btn btn-primary">Cadastrar</button>
+    <a class="btn btn-outline-danger" routerLink="/inicio">Cancelar</a>
   </form>
 </div>
 

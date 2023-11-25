@@ -26,20 +26,20 @@ ngOnInit(){
   if(id){
     this.clienteservice.getById(parseInt(id)).subscribe(resp =>{
       this.cliente = resp;
-      this.title = `Alterando o cliente ${this.cliente.nome}`
+      this.title = `Alterando o usuário ${this.cliente.nome}`
     })
   }
 }
 
 onSubmit(){
-  let observable : Observable<Cliente>;
-  if(this.cliente.id){
-    observable = this.clienteservice.update(this.cliente);
-  }else{
-    observable = this.clienteservice.insert(this.cliente);
-  }
-  observable.subscribe(()=>{
-    this.router.navigate(['/clientes'])
-  })
+    let observable : Observable<Cliente>;
+    if(this.cliente.id){
+      observable = this.clienteservice.update(this.cliente);
+    }else{
+      observable = this.clienteservice.insert(this.cliente);
+    }
+    observable.subscribe(()=>{
+      this.router.navigate(['/listaCliente'])
+    })
 }
 }
