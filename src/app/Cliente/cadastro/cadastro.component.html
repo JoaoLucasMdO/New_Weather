@@ -10,6 +10,7 @@
         name="nome"
         #nome="ngModel"
         placeholder="Digite o nome"
+        required
         [(ngModel)] = "cliente.nome">
       </div>
       <div class="form-group">
@@ -20,6 +21,7 @@
         name="senha"
         #nome="ngModel"
         placeholder="Digite a senha"
+        required
         [(ngModel)] = "cliente.senha">
       </div>
       <div class="form-group">
@@ -27,7 +29,8 @@
         <input type="text" 
         class="form-control" 
         id="confSenha" 
-        placeholder="Confirme a senha">
+        placeholder="Confirme a senha"
+        required>
       </div>
       <div class="form-group">
         <label for="email">E-mail</label>
@@ -37,6 +40,7 @@
         #nome="ngModel"
         id="email" 
         placeholder="Digite o e-mail"
+        required
         [(ngModel)] = "cliente.email">
       </div>
       <div class="form-group">
@@ -47,6 +51,7 @@
         #nome="ngModel"
         id="tel"
         placeholder="Digite o telefone"
+        required
         [(ngModel)] = "cliente.telefone">
       </div>
     <button type="submit" class="btn btn-primary">Cadastrar</button>

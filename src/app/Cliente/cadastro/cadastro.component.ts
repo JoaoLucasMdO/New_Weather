@@ -32,6 +32,21 @@ ngOnInit(){
 }
 
 onSubmit(){
+  if(this.cliente.nome == null){
+    window.alert("Digite o nome");
+  }
+  else if(this.cliente.senha == null){
+    window.alert("Digite a senha");
+  }
+  else if(document.getElementById("confSenha")?.innerText == null){
+    window.alert("Confirme a senha");
+  }
+  else if(this.cliente.email == null){
+    window.alert("Digite o email");
+  }
+  else if(this.cliente.telefone == null){
+    window.alert("Digite o telefone");
+  }else{
     let observable : Observable<Cliente>;
     if(this.cliente.id){
       observable = this.clienteservice.update(this.cliente);
@@ -41,5 +56,6 @@ onSubmit(){
     observable.subscribe(()=>{
       this.router.navigate(['/listaCliente'])
     })
+  }
 }
 }
