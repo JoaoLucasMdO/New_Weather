@@ -2,7 +2,11 @@
   <div class="container">
     <div class="admin-header">
       <h1>Página do Administrador</h1>
-      <button routerLink="/login" class="btn btn-danger">Sair</button>
+        <div id="imagemUsuario"></div>
+          <li class="nav-item">
+          <button class="btn  btn-block fundo-laranja-escuro" onclick="logoutFirebase()"><i
+                  class="bi bi-box-arrow-in-right"></i>Logout</button>
+          </li>
     </div>
         <button class="btn btn-outline-primary" routerLink="/listaCliente">
           Clientes
@@ -14,3 +18,4 @@
       <img src="caminho/para/imagem.jpg" alt="Imagem" width="300">
     </div>
   </div>
+

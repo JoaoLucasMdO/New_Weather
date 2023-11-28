@@ -1,62 +1,70 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<div class="container">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<body class="login">
     <h2>{{title}}</h2>
     <form (ngSubmit) = "onSubmit()">
-      <div class="form-group">
-        <label for="nome">Nome</label>
-        <input type="text" 
-        class="form-control" 
-        id="nome" 
-        name="nome"
-        #nome="ngModel"
-        placeholder="Digite o nome"
-        required
-        [(ngModel)] = "cliente.nome">
-      </div>
-      <div class="form-group">
-        <label for="senha">Senha</label>
-        <input type="text" 
-        class="form-control" 
-        id="senha" 
-        name="senha"
-        #nome="ngModel"
-        placeholder="Digite a senha"
-        required
-        [(ngModel)] = "cliente.senha">
-      </div>
-      <div class="form-group">
-        <label for="confSenha">Confirmar Senha</label>
-        <input type="text" 
-        class="form-control" 
-        id="confSenha" 
-        placeholder="Confirme a senha"
-        required>
-      </div>
-      <div class="form-group">
-        <label for="email">E-mail</label>
-        <input type="text" 
-        class="form-control" 
-        name="email"
-        #nome="ngModel"
-        id="email" 
-        placeholder="Digite o e-mail"
-        required
-        [(ngModel)] = "cliente.email">
-      </div>
-      <div class="form-group">
-        <label for="tel">Telefone</label>
-        <input type="tel" 
-        class="form-control" 
-        name="tel"
-        #nome="ngModel"
-        id="tel"
-        placeholder="Digite o telefone"
-        required
-        [(ngModel)] = "cliente.telefone">
-      </div>
-    <button type="submit" class="btn btn-primary">Cadastrar</button>
-    <a class="btn btn-outline-danger" routerLink="/inicio">Cancelar</a>
+        <div class="card shadow-lg rounded">
+            <div class="card-body my-2">
+                  <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text"
+                    class="form-control"
+                    id="nome"
+                    name="nome"
+                    #nome="ngModel"
+                    placeholder="Digite o nome"
+                    required
+                    [(ngModel)] = "cliente.nome">
+                  </div>
+                    <div class="form-group mt-2">
+                        <label for="email">E-mail</label>
+                        <input type="email"
+                          class="form-control"
+                          name="email"
+                          #nome="ngModel"
+                          placeholder="Digite o e-mail"
+                          id="emailNovo"
+                          required
+                          autofocus
+                          [(ngModel)] = "cliente.email">
+                    </div>
+                    <div class="form-group">
+                      <label for="tel">Telefone</label>
+                      <input type="tel"
+                      class="form-control"
+                      name="tel"
+                      #nome="ngModel"
+                      id="tel"
+                      placeholder="Digite o telefone"
+                      required
+                      [(ngModel)] = "cliente.telefone">
+                    </div>
+                    <div class="form-group mt-2">
+                      <label for="senha">Senha</label>
+                      <input type="password"
+                      class="form-control"
+                      id="senhaNovo"
+                      name="senhaNovo"
+                      #nome="ngModel"
+                      placeholder="Digite a senha"
+                      required
+                      [(ngModel)] = "cliente.senha">
+                    </div>
+                    <div class="d-grid gap-2 my-2">
+                        <button type="submit" class="btn btn-success me-2 p-2"
+                            title="Crie um novo usuário informando o email e senha">
+                            <i class="bi bi-person-circle"></i> Novo Usuário </button>
+                    </div>
+                <a routerLink="/login">Deseja efetuar o login?</a>
+            </div>
+            <div id="mensagemAlerta"></div>
+        </div>
+        <!-- Carregamento dos scripts do projeto-->
+        <script src="js/util/alerta.js"></script>
+        <script src="js/views/novo-usuario.js"></script>
   </form>
-</div>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
