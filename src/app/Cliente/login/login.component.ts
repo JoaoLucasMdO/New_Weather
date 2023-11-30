@@ -9,21 +9,21 @@ import { Cliente } from '../shared/cliente';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  private logado: boolean = false;
+//   private logado: boolean = false;
 
-  constructor(private router: Router) {}
+//   constructor(private router: Router) {}
 
- testarLogin() {
-    let login = (<HTMLInputElement>document.getElementById('email'))?.value;
-    let senha = (<HTMLInputElement>document.getElementById('senha'))?.value;
+//  testarLogin() {
+//     let login = (<HTMLInputElement>document.getElementById('email'))?.value;
+//     let senha = (<HTMLInputElement>document.getElementById('senha'))?.value;
 
-    if ((login === "gesley.rosa@fatec.sp.gov.br" && senha === '12345') || (login === "joao.lucas@fatec.sp.gov.br" && senha === '12345')) {
-      this.router.navigate(['/admHome']);
-    } else () => {
-      // Tratamento para credenciais incorretas, se necessário
-      console.log("Credenciais incorretas");
-    }
-  }
+//     if ((login === "gesley.rosa@fatec.sp.gov.br" && senha === '12345') || (login === "joao.lucas@fatec.sp.gov.br" && senha === '12345')) {
+//       this.router.navigate(['/admHome']);
+//     } else () => {
+//       // Tratamento para credenciais incorretas, se necessário
+//       console.log("Credenciais incorretas");
+//     }
+//   }
 }
 
 
