@@ -9,6 +9,5 @@ async function noticias(){
     const noticia = await fetch(noticiaapi)
     const data = await noticia.json() 
     console.log(data);
-
 }
 
