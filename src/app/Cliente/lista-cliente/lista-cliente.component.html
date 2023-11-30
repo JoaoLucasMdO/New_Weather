@@ -32,12 +32,12 @@
   </thead>
   <tbody>
     <tr *ngFor="let cliente of clientes">
-      <td>{{cliente.id}}</td>
+      <td>{{cliente.id_usuario}}</td>
       <td>{{cliente.nome}}</td>
       <td>{{cliente.senha}}</td>
       <td>{{cliente.telefone}}</td>
       <td >
-          <a style="margin-right:5%;" class="btn btn-primary" title="editar" routerLink="/cadastro/editar/{{cliente.id}}">
+          <a style="margin-right:5%;" class="btn btn-primary" title="editar" routerLink="/cadastro/editar/{{cliente.id_usuario}}">
               <i class="fa-regular fa-pen-to-square fa-bounce" style="color: #ffffff;"></i>
           </a>
 

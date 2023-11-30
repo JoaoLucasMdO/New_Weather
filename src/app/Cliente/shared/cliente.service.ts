@@ -25,7 +25,7 @@ export class ClienteService {
   }
 
   public update(cliente : Cliente){
-    const newURL = `${this.URL}/${cliente.id}`;
+    const newURL = `${this.URL}/${cliente.id_usuario}`;
     return this.http.put<Cliente>(newURL, cliente);
   }
 
