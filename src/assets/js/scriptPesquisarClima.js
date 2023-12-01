@@ -21,6 +21,7 @@ async function oi() {
     let vento = parseFloat(data.wind.speed);
     let pressao = data.main.pressure;
     let sensacaoTermica = data.main.feels_like;
+    let tempo = data.weather[0].description;
 
 
     document.querySelector('#temperatura').innerHTML = `+${Math.floor(temperatura)}º`
@@ -29,5 +30,6 @@ async function oi() {
     document.querySelector('#pressao').innerHTML = `${pressao} mb`
     document.querySelector('#vento').innerHTML = `${vento} km/h`
     document.querySelector('#sensacaoTermica').innerHTML = `${sensacaoTermica}`;
+    document.querySelector('#tempo').innerHTML = `${tempo}`
 };
 
