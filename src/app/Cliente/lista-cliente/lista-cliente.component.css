@@ -5,9 +5,6 @@
     padding: 20px;
   }
   
-  .admin-header h1 {
-    margin: 0;
-  }
   
   .admin-nav {
     margin-top: 30px;
@@ -27,8 +24,4 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.title h1 {
-    margin-right: 10px;
 }
