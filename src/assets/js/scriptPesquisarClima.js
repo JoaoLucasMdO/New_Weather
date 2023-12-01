@@ -14,7 +14,6 @@ async function oi() {
         return
     }
     const title = cidade;
-    document.querySelector("#nomeCidade").innerHTML = title[0].toUpperCase() + title.substring(1);;
     let temperatura = parseFloat(data.main.temp);
     let temperaturaMin = parseFloat(data.main.temp_min);
     let temperaturaMax = parseFloat(data.main.temp_max);
@@ -30,16 +29,17 @@ async function oi() {
     let dataSunrise = new Date(timestampSunrise * 1000);
     let dataSunset = new Date(timestampSunset * 1000);
     // Extrair horas, minutos e segundos
-    let horaSunrise = dataSunrise.toISOString().substr(11, 8);
-    let horaSunset = dataSunset.toISOString().substr(11, 8);
+    let horaSunrise = dataSunrise.toString(11, 8);
+    let horaSunset = dataSunset.toString(11, 8);
+    console.log(horaSunrise);
+    console.log(horaSunset);
 
-    document.querySelector('#temperatura').innerHTML = `Temperatura: ${temperatura} º`
+    document.querySelector('#temperatura').innerHTML = `${temperatura} º`
     document.querySelector('#temperaturaMinMax').innerHTML = `Max: ${temperaturaMax} º / Mín: ${temperaturaMin} º`
-    document.querySelector('#umidade').innerHTML = `Umidade: ${umidade} %`
-    document.querySelector('#pressao').innerHTML = `Pressão: ${pressao} mb`
-    document.querySelector('#vento').innerHTML = `Vento: ${vento} km/h`
-    document.querySelector('#tempo').innerHTML = `Tempo: ${tempo}`;
-    document.querySelector('#sensacaoTermica').innerHTML = `Tempo: ${sensacaoTermica}`;
+    document.querySelector('#umidade').innerHTML = `${umidade} %`
+    document.querySelector('#pressao').innerHTML = `${pressao} mb`
+    document.querySelector('#vento').innerHTML = `${vento} km/h`
+    document.querySelector('#sensacaoTermica').innerHTML = `${sensacaoTermica}`;
     document.querySelector('#sunrise').innerHTML = `Nascer do sol: ${horaSunrise}`;
     document.querySelector('#sunset').innerHTML = `Descer do sol: ${horaSunset}`;
 };
