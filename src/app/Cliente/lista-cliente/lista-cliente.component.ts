@@ -17,14 +17,16 @@ export class ListaClienteComponent implements OnInit {
   ngOnInit() {
     this.getAll();
   }
+
   getAll(){
     this.clienteservice.getAll().subscribe(resp=>{
       this.clientes= resp
     })
   }
+
   delete(cliente: Cliente){
     if(window.confirm('Confirmar exclusão do registro')){
-    this.clienteservice.delete(cliente.id).subscribe(()=>{
+    this.clienteservice.delete(cliente.id_usuario).subscribe(()=>{
     this.clientes = this.clientes.filter(c=> c!== cliente)
     })
   }}
