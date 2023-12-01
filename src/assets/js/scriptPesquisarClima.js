@@ -19,28 +19,15 @@ async function oi() {
     let temperaturaMax = parseFloat(data.main.temp_max);
     let umidade = parseFloat(data.main.humidity);
     let vento = parseFloat(data.wind.speed);
-    //let tempo = data.weather[0].description;
     let pressao = data.main.pressure;
     let sensacaoTermica = data.main.feels_like;
-    // Funções para nascer e descer do sol
-    let timestampSunrise = data.main.sunrise;
-    let timestampSunset = data.main.sunset;
-    // Converter timestamps para objetos Date
-    let dataSunrise = new Date(timestampSunrise * 1000);
-    let dataSunset = new Date(timestampSunset * 1000);
-    // Extrair horas, minutos e segundos
-    let horaSunrise = dataSunrise.toString(11, 8);
-    let horaSunset = dataSunset.toString(11, 8);
-    console.log(horaSunrise);
-    console.log(horaSunset);
 
-    document.querySelector('#temperatura').innerHTML = `${temperatura} º`
+
+    document.querySelector('#temperatura').innerHTML = `+${Math.floor(temperatura)}º`
     document.querySelector('#temperaturaMinMax').innerHTML = `Max: ${temperaturaMax} º / Mín: ${temperaturaMin} º`
     document.querySelector('#umidade').innerHTML = `${umidade} %`
     document.querySelector('#pressao').innerHTML = `${pressao} mb`
     document.querySelector('#vento').innerHTML = `${vento} km/h`
     document.querySelector('#sensacaoTermica').innerHTML = `${sensacaoTermica}`;
-    document.querySelector('#sunrise').innerHTML = `Nascer do sol: ${horaSunrise}`;
-    document.querySelector('#sunset').innerHTML = `Descer do sol: ${horaSunset}`;
 };
 
