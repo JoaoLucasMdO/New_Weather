@@ -10,7 +10,8 @@
     <script src="../../../assets/js/camera.js"></script>
     <script src="../../../assets/js/jquery.tools.min.js"></script>
     <script src="../../../assets/js/jquery.ui.totop.js"></script>
-    <script src="../../../assets/js/scriptPesquisarClima.js" defer></script>
+
+
 
     <!--[if (gt IE 9)|!(IE)]><!-->
     <script src="../../../assets/js/jquery.mobile.customized.min.js"></script>
@@ -61,7 +62,7 @@
                     <form id="search1" class="search" action="search.php" method="GET">
                         <label for="s">Enter Location</label>
                         <input id="s" type="text" name="s" value="">
-                        <a onClick="document.getElementById('search1').submit()" class="button1"></a>
+                        <a id="btnVerificarClima" onclick="oi()" class="button1"></a>
                     </form>
                 </div>
             </div>
@@ -71,34 +72,34 @@
                 <div class="block-1">
                     <img src="../../../assets/images/page-1_img-1.jpg" alt="">
                     <div>
-                        <div class="text-1">+25</div>
-                        <div class="text-3">Hi 27&deg; | Lo 21&deg; <br>Intermittent Clouds</div>
+                        <div class="text-1" id="temperatura">+25</div>
+                        <div class="text-3" id="temperaturaMinMax">Máx 27&deg; | Mín 21&deg; <br id="tempo">Intermittent Clouds</div>
                     </div>
                 </div>
                 <table class="table-1">
                     <tr class="bg-1">
-                        <td>Feels like: </td>
-                        <td>26°</td>
+                        <td>Sensação Térmica:</td>
+                        <td id="sensacaoTermica">26°</td>
                     </tr>
                     <tr>
-                        <td>Humidity:</td>
-                        <td>71%</td>
+                        <td>Umidade:</td>
+                        <td id="umidade">71%</td>
                     </tr>
                     <tr class="bg-1">
-                        <td>Wind:</td>
-                        <td>S 10 mph </td>
+                        <td>Vento:</td>
+                        <td id="vento"> 10 km/h </td>
                     </tr>
                     <tr>
-                        <td>Sunrise:</td>
-                        <td>6:31 AM</td>
+                        <td>Nascer do Sol:</td>
+                        <td id="sunrise">6:31 AM</td>
                     </tr>
                     <tr class="bg-1">
-                        <td>Sunset:</td>
-                        <td>8:52 PM</td>
+                        <td>Pôr do Sol</td>
+                        <td id="sunset">8:52 PM</td>
                     </tr>
                     <tr>
-                        <td>Barometer:</td>
-                        <td>30.03" Hg</td>
+                        <td>Pressão:</td>
+                        <td id="pressao">30.03 mb</td>
                     </tr>
                 </table>
                 <a href="#" class="btn-1"><span>change location</span></a>
