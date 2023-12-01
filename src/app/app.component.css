@@ -20,3 +20,10 @@ button{
   justify-content: center;
   background: linear-gradient(to right, #FB724C, #FEDCD2);
 }
+
+#barraNav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
