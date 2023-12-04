@@ -1,16 +1,17 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <div class="container">
+  <div class="container_12">
     <div class="admin-header">
       <h1>Página do Administrador</h1>
-        <div id="imagemUsuario"></div>
-          <li class="nav-item">
-          <button class="btn  btn-block fundo-laranja-escuro" onclick="logoutFirebase()"><i
-                  class="bi bi-box-arrow-in-right"></i>Logout</button>
-          </li>
+      <button routerLink="/inicio" class="btn btn-danger">Sair</button>
     </div>
+    <div class="container row-md-12">
         <button class="btn btn-outline-primary" routerLink="/listaCliente">
           Clientes
         </button>
+        <button class="btn btn-outline-primary" routerLink="/feedback">
+          Feedbacks
+        </button>
+    </div>
     <div class="message">
       <h2>Bem-vindo!</h2>
     </div>

@@ -9,6 +9,7 @@ import { CadastroComponent } from './Cliente/cadastro/cadastro.component';
 import { LoginComponent } from './Cliente/login/login.component';
 import { AdmHomeComponent } from './Cliente/adm-home/adm-home.component';
 import { ListaClienteComponent } from './Cliente/lista-cliente/lista-cliente.component';
+import { FeedbackComponent } from './Cliente/feedback/feedback.component';
 
 const routes: Routes = [
   {path: 'cadastro/novo', component:CadastroComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'noticias', component:NoticiasComponent},
   {path: 'planos', component:PlanosComponent},
   {path: 'redes-estacoes', component:RedesEstacoesComponent},
+  {path: 'feedback', component:FeedbackComponent},
   {path:'',
   redirectTo: '/inicio',
   pathMatch:'full'}

@@ -1,0 +1,27 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  
+  .admin-nav {
+    margin-top: 30px;
+  }
+  
+  .message {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .image-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

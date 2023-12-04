@@ -14,6 +14,7 @@ import { RedesEstacoesComponent } from './Site/redes-estacoes/redes-estacoes.com
 import { AdmHomeComponent } from './Cliente/adm-home/adm-home.component';
 import { ListaClienteComponent } from './Cliente/lista-cliente/lista-cliente.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FeedbackComponent } from './Cliente/feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContatosComponent,
     RedesEstacoesComponent,
     AdmHomeComponent,
-    ListaClienteComponent
+    ListaClienteComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
