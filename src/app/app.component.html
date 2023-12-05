@@ -1,108 +1,107 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>New Weather</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/">
+    <meta charset="utf-8">
+    <title>New Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
 </head>
+
 <body onload="noticias()">
     <header>
         <div class="container_12">
-            <div class="row">
-                <div class="grid_12">
-                    <h1 class="title-1">New Weather</h1>
-                    <div class="fright">
-                        <div class="clearfix">
-                            <ul class="top_menu clearfix">
-                                <li><a routerLink="/login">Entrar</a>|</li>
-                                <li><a routerLink="/cadastro/novo">Cadastrar</a>|</li>
-                            </ul>
-                        </div>
+            <div class="grid_12">
+                <h1 class="title-1">New Weather</h1>
+                <div class="fright">
+                    <div class="clearfix">
+                        <ul class="top_menu clearfix">
+                            <li><a routerLink="/login">Entrar</a>|</li>
+                            <li><a routerLink="/cadastro/novo">Cadastrar</a>|</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="grid_12">
-                    <nav class="full-width">
-                        <ul class="sf-menu clearfix" id="barraNav">
-                            <li><a routerLink="/inicio">Inicio</a></li>
-                            <li><a routerLink="/noticias">Noticias</a></li>
-                            <li><a routerLink="/redes-estacoes">Redes de Estações</a></li>
-                            <li><a routerLink="/contatos">Contatos</a></li>
-                            <li><a routerLink="/planos">Planos</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="grid_12">
+                <nav class="full-width">
+                    <ul class="sf-menu clearfix" id="barraNav">
+                        <li><a routerLink="/inicio">Inicio</a></li>
+                        <li><a routerLink="/noticias">Noticias</a></li>
+                        <li><a routerLink="/redes-estacoes">Redes de Estações</a></li>
+                        <li><a routerLink="/contatos">Contatos</a></li>
+                        <li><a routerLink="/planos">Planos</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
-<router-outlet></router-outlet>
-<footer>
-    <div class="container_12 border-bot">
-        <div class="row">
-            <div class="grid_2 w1">
-                <h6>Local Weather</h6>
-                <ul class="list-2">
-                    <li><a href="#">My Favorites</a></li>
-                    <li><a href="#">History Data</a></li>
-                    <li><a href="#">Weather Stations</a></li>
-                </ul>
+    <router-outlet></router-outlet>
+    <footer>
+        <div class="container_12 border-bot">
+            <div class="row">
+                <div class="grid_2 w1">
+                    <h6>Local Weather</h6>
+                    <ul class="list-2">
+                        <li><a href="#">My Favorites</a></li>
+                        <li><a href="#">History Data</a></li>
+                        <li><a href="#">Weather Stations</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Maps &amp; Radar</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Radar</a></li>
+                        <li><a href="#">Satellite</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Severe Weather</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Tropical &amp; Hurricane</a></li>
+                        <li><a href="#">Storm Reports</a></li>
+                        <li><a href="#">U.S. Severe Alerts</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Photos &amp; Videos</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Photo Galleries</a></li>
+                        <li><a href="#">World View</a></li>
+                        <li><a href="#">Webcams</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Blogs</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Meteorology Blogs</a></li>
+                        <li><a href="#">Member Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Climate</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Climate Change</a></li>
+                        <li><a href="#">Evidence</a></li>
+                        <li><a href="#">Record Extremes</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="grid_2 w1">
-                <h6>Maps &amp; Radar</h6>
-                <ul class="list-2">
-                    <li><a href="#">Radar</a></li>
-                    <li><a href="#">Satellite</a></li>
-                </ul>
-            </div>
-            <div class="grid_2 w1">
-                <h6>Severe Weather</h6>
-                <ul class="list-2">
-                    <li><a href="#">Tropical &amp; Hurricane</a></li>
-                    <li><a href="#">Storm Reports</a></li>
-                    <li><a href="#">U.S. Severe Alerts</a></li>
-                </ul>
-            </div>
-            <div class="grid_2 w1">
-                <h6>Photos &amp; Videos</h6>
-                <ul class="list-2">
-                    <li><a href="#">Photo Galleries</a></li>
-                    <li><a href="#">World View</a></li>
-                    <li><a href="#">Webcams</a></li>
-                </ul>
-            </div>
-            <div class="grid_2 w1">
-                <h6>Blogs</h6>
-                <ul class="list-2">
-                    <li><a href="#">Meteorology Blogs</a></li>
-                    <li><a href="#">Member Blogs</a></li>
-                </ul>
-            </div>
-            <div class="grid_2 w1">
-                <h6>Climate</h6>
-                <ul class="list-2">
-                    <li><a href="#">Climate Change</a></li>
-                    <li><a href="#">Evidence</a></li>
-                    <li><a href="#">Record Extremes</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row f-last">
-            <div class="fleft">
-                Fatec Votorantim © 2023 &nbsp;|&nbsp;  <a class="h-underline" href="#">Política de Privacidade</a> &nbsp;|&nbsp; Todos os direitos reservados
-                <!--{%FOOTER_LINK} -->
-            </div>
-            <div class="fright">
-                <div class="list-services">
-                    <a href="#" class="soc-1"><i class="icon-twitter-sign"></i>twitter</a>
-                    <a href="#" class="soc-2"><i class="icon-facebook-sign"></i>facebook</a>
-                    <a href="#" class="soc-3"><i class="icon-google-plus-sign"></i>Google+</a>
+            <div class="row f-last">
+                <div class="fleft">
+                    Fatec Votorantim © 2023 &nbsp;|&nbsp; <a class="h-underline" href="#">Política de Privacidade</a>
+                    &nbsp;|&nbsp; Todos os direitos reservados
+                    <!--{%FOOTER_LINK} -->
+                </div>
+                <div class="fright">
+                    <div class="list-services">
+                        <a href="#" class="soc-1"><i class="icon-twitter-sign"></i>twitter</a>
+                        <a href="#" class="soc-2"><i class="icon-facebook-sign"></i>facebook</a>
+                        <a href="#" class="soc-3"><i class="icon-google-plus-sign"></i>Google+</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
-</html>
 
+</html>

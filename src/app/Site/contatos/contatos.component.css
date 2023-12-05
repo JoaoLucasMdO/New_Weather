@@ -97,7 +97,7 @@
     border-radius:0px;
     color: #b49e7a;
     font: 13px/18px Arial, sans-serif;
-    color: #a4a4a4;
+    color: #5a5a5a;
     width: 100%;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -140,5 +140,30 @@
 #contact-form label textarea { height: 200px;}
 }
 @media only screen and (max-width: 320px) {
+}
 
+#tipoFeedback{
+    height:36px;
+    box-shadow: none !important;
+    padding: 9px 9px 6px 12px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    background: #ffffff;
+    position: relative;
+    float: left;
+    border-radius:0px;
+    color: #b49e7a;
+    font: 13px/18px Arial, sans-serif;
+    color: #5a5a5a;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
 }

@@ -32,7 +32,6 @@ ngOnInit(){
 }
 
 onSubmit(){
-
     let observable : Observable<Cliente>;
     if(this.cliente.id_usuario){
       observable = this.clienteservice.update(this.cliente);

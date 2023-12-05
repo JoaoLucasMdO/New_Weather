@@ -30,8 +30,9 @@
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Nome</th>
-      <th scope="col">Endereço</th>
-      <th scope="col">Limite de Crédito</th>
+      <th scope="col">SENHA</th>
+      <th scope="col">EMAIL</th>
+      <th scope="col">TELEFONE</th>
       <th scope="col">Editar/Excluir</th>
     </tr>
   </thead>
@@ -40,6 +41,7 @@
       <td>{{cliente.id_usuario}}</td>
       <td>{{cliente.nome}}</td>
       <td>{{cliente.senha}}</td>
+      <td>{{cliente.email}}</td>
       <td>{{cliente.telefone}}</td>
       <td >
           <a style="margin-right:5%;" class="btn btn-primary" title="editar" routerLink="/cadastro/editar/{{cliente.id_usuario}}">
