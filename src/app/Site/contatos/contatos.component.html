@@ -75,6 +75,10 @@
                                     </select>
                                 </label>
                                 <label>
+                                    <input type="text" id="assunto" placeholder="Assunto" name="assunto" required
+                                    [(ngModel)] = "feedback.assunto">
+                                </label>
+                                <label>
                                     <textarea id="mensagem" placeholder="Mensagem" maxlength="250" name="mensagem" required 
                                     [(ngModel)] = "feedback.mensagem"></textarea>
                                 </label>
